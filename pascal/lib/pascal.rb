@@ -1,13 +1,14 @@
 class Pascal
 
-  def pascal_triangle_upto(limit)
+  def self.generate(limit)
     1.upto(limit) do |i|
-      c = 1
+      number = 1
       1.upto(i) do |j|
-        print "#{c} "
-        c = c * (i - j) / j
+        yield number
+        yield ' '
+        number = number * (i - j) / j
       end
-      yield
+      yield "\n"
     end
   end
 
