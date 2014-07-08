@@ -11,4 +11,4 @@ end
 
 print input_array
 print "\n"
-print input_array.create_hash
+print input_array.create_hash_onsize

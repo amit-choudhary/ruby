@@ -1,5 +1,6 @@
 class Array
-  def create_hash
+
+  def create_hash_onsize
     array_hash = Hash.new { |hash, key| hash[key]=[] }
 
     for i in 0...size
