@@ -23,7 +23,7 @@ class Customer
   end
 
   def to_s
-    "Name: #{ @name } Account No.: #{ @account_no } Balance: #{ @balance }"
+    "Name: #{ @name } Account No.: #{ account_no } Balance: #{ balance }"
   end
 
 end
