@@ -1,5 +1,5 @@
 class Array
-  def power(x)
-   map { |n| n ** x }
+  def power(exponent)
+   map { |element| element ** exponent }
   end
 end

@@ -9,6 +9,7 @@ for i in (0..size)
   array[i] = gets.chomp.to_i
 end
 
-p array
+print array
+print "\n"
 power_array = array.power(3)
-p power_array
+print power_array
