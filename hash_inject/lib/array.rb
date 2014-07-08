@@ -1,4 +1,5 @@
 class Array
+
   def hash_on_evenodd_size
     array_hash = Hash.new { |hash, key| hash[key]=[] }
 
@@ -15,4 +16,5 @@ class Array
       hash
     end
   end
+
 end
