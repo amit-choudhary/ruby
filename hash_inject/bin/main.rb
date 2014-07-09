@@ -11,4 +11,4 @@ end
 
 print input_array
 print "\n"
-print input_array.hash_on_evenodd_size
+print input_array.group_on_odd_even
