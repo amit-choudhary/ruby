@@ -1,0 +1,2 @@
+class BlankArgument < StandardError
+end
