@@ -2,10 +2,7 @@ class Item
   attr_accessor :price, :name
   
   def initialize(name, imported, exempted, price)
-  	@name = name
-  	@imported = imported
-  	@exempted = exempted
-  	@price = price
+  	@name, @imported, @exempted, @price = name, imported, exempted, price
   end
 
   def import_duty

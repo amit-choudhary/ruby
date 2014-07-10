@@ -7,7 +7,7 @@ class Sales
   end
 
   def add
-    test = true
+    flag = true
     while test
       print 'Name of the product: '
       name = gets.chomp
@@ -21,15 +21,12 @@ class Sales
       @sales.push(item)
       print 'Do you want to add more items to your list(y/n): '
       input_str = gets.chomp
-      input_str == 'y' ? test = true : test = false
+      input_str == 'y' ? flag = true : flag = false
     end
   end
 
   def generate_bill
-    @sales_tax = 0
-    @import_duty = 0
-    @total_price = 0
-    @total_amount = 0
+    @sales_tax, @import_duty, @total_price, @total_amount = 0, 0, 0, 0
     @sales.each do |item|
       @sales_tax += item.sales_tax
       @import_duty += item.import_duty
