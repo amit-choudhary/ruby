@@ -1,5 +1,5 @@
-require_relative '../lib/fixnum.rb'
-require_relative '../lib/badargument.rb'
+require_relative '../lib/fixnum'
+require_relative '../lib/bad_argument'
 
 begin
   print 'Enter the input number: '
@@ -10,6 +10,6 @@ begin
     puts input_num.factorial
   end
 rescue BadArgument
-  puts "Bad Argument"
+  puts "Bad Argument. Please Enter again"
   retry
 end
