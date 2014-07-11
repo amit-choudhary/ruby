@@ -9,4 +9,4 @@ size.times do |index|
 end
 print input_array
 print "\n"
-puts input_array.power(3)
+print input_array.power(3)
