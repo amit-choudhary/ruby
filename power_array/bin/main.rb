@@ -7,5 +7,6 @@ input_array = Array.new
 size.times do |index|
   input_array.push (gets.chomp.to_i)
 end
-puts "#{input_array}"
-puts "#{input_array.power(3)}"
+print input_array
+print "\n"
+puts input_array.power(3)
