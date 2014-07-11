@@ -1,7 +1,6 @@
 class Customer
   @@account_number = 0
-  attr_reader :balance
-  attr_reader :account_no
+  attr_reader :balance, :account_no
 
   def initialize(name)
     @name = name
