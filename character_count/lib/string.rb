@@ -3,11 +3,11 @@ class String
   def character_count
     case_hash = Hash.new(0)
     each_char do |char|
-      if char =~ /[a-z]/
+      if ('a'..'z').include? char
         case_hash[:lowercase] += 1
-      elsif char =~ /[A-z]/
-        case_hash[:uppaercase] += 1
-      elsif char =~ /[0-9]/
+      elsif ('A'..'Z').include? char
+        case_hash[:uppercase] += 1
+      elsif ('0'..'9').include? char
         case_hash[:digit] += 1
       else
         case_hash[:special_char] += 1
