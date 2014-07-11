@@ -1,13 +1,13 @@
 class Customer
   @@account_number = 0
-  attr_accessor :balance
+  attr_reader :balance
   attr_reader :account_no
 
-  def initialize(name, balance = 1000)
+  def initialize(name)
     @name = name
     @account_no = @@account_number + 1
     @@account_number += 1
-    @balance = balance
+    @balance = 1000
   end
 
   def deposit(amount)

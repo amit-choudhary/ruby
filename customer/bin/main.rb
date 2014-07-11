@@ -8,5 +8,5 @@ puts "Balance : #{ first_customer.balance }"
 puts "Withdrawing Rs.200"
 first_customer.withdraw(1200)
 puts "Balance : #{ first_customer.balance }"
-second_customer = Customer.new("Nitin", 2000)
+second_customer = Customer.new("Nitin")
 puts second_customer
