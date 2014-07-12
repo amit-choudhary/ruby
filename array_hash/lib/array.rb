@@ -1,13 +1,13 @@
 class Array
 
-  def create_hash_onsize
-    array_hash = Hash.new { |hash, key| hash[key]=[] }
+  def group_on_length
+    hash_group_on_length = Hash.new { |hash, key| hash[key] = Array.new }
 
-    for i in 0...size
-      array_hash[self[i].to_s.length] << self[i]
+    for var in self
+      hash_group_on_length[var.to_s.length] << var
     end
 
-    array_hash
+    hash_group_on_length
 
   end
 
