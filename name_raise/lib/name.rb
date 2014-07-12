@@ -1,13 +1,18 @@
-require_relative 'blank_argument.rb'
+require_relative 'blank_argument'
+require_relative 'firstname_error'
 
 class Name
 
-  def not_valid?(name)
-    name.nil? or name == false or name.length == 0
+  def invalid?(name)
+    name.nil? || name.length == 0
   end
 
   def initialize(firstname, lastname)
-    if (not_valid?(firstname) or firstname[0] != firstname[0].capitalize) or (not_valid?(lastname))
+    if invalid?(firstname)
+      raise BlankArgument
+    elsif firstname[0] != firstname[0].capitalize
+      raise FirstnameError
+    elsif invalid?(lastname)
       raise BlankArgument
     end
     @firstname = firstname
