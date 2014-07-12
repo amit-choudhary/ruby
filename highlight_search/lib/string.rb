@@ -5,7 +5,7 @@ class String
     regex_word = /(#{str})/i
     new_str = gsub(regex_word) do |match|
       occurence_count += 1
-       "(#{ match })"
+      "(#{ match })"
     end
     "#{ new_str } \nTotal occurences found: #{ occurence_count }"
   end

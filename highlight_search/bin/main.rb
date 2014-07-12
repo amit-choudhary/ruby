@@ -1,4 +1,4 @@
-require_relative '../lib/string.rb'
+require_relative '../lib/string'
 
 print 'Enter the input string: '
 input_str = gets.chomp
