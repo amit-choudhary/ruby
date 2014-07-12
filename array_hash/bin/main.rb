@@ -6,7 +6,7 @@ puts 'Enter the array elements: '
 input_array = Array.new()
 
 size.times do |index|
-	input_array.push(gets.chomp)
+  input_array.push(gets.chomp)
 end
 
 print input_array
