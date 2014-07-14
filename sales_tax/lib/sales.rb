@@ -31,7 +31,7 @@ class Sales
       @sales_tax += item.sales_tax
       @import_duty += item.import_duty
       @total_price += item.price
-      puts "Item Name: #{item.name} Price: #{item.price}  Sales Tax: #{item.sales_tax} Import Duty: #{item.import_duty}"
+      puts "Item Name: #{ item.name } Price: #{ item.price }  Sales Tax: #{ item.sales_tax } Import Duty: #{ item.import_duty }"
     end
     print "Grand Total :"
     (@total_amount = @sales_tax + @import_duty + @total_price).round
