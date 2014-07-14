@@ -1,5 +1,5 @@
-require_relative '../lib/pascal.rb'
+require_relative '../lib/pascal_triangle.rb'
 
 print 'Enter the no. of rows: '
 input = gets.chomp.to_i
-Pascal.generate(input) { |number| print number }
+PascalTriangle.generate(input) { |character| print character }
