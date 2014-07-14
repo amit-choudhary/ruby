@@ -1,7 +1,7 @@
-class Pascal
+class PascalTriangle
 
-  def self.generate(limit)
-    1.upto(limit) do |i|
+  def self.generate(rows)
+    1.upto(rows) do |i|
       number = 1
       1.upto(i) do |j|
         yield number
