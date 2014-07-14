@@ -8,7 +8,6 @@ class Array
     end
 
     hash_group_on_length
-
   end
 
 end
