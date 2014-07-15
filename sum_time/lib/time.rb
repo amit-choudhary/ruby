@@ -1,6 +1,6 @@
 require 'time'
 
-class Sum
+class Time
   REGEX = /^([0-1]?\d?|[2]?[0-3]?)[:][0-5]?\d?[:][0-5]?\d?$/
 
   def valid?(str)
