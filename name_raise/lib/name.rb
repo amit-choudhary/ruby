@@ -9,14 +9,11 @@ class Name
 
   def initialize(firstname, lastname)
     if invalid?(firstname)
-      puts 'First name is blank. Please Enter again.'
-      raise BlankArgument
+      raise BlankArgument.new('First name is blank. Please Enter again.')
     elsif firstname[0] != firstname[0].capitalize
-      puts 'First alphabet of first name is not capital. Please Enter again'
-      raise FirstnameError
+      raise FirstnameError.new('First alphabet of first name is not capital. Please Enter again')
     elsif invalid?(lastname)
-      puts 'Last name is blank. Please Enter again.'
-      raise BlankArgument
+      raise BlankArgument.new('Last name is blank. Please Enter again.')
     end
     @firstname = firstname
     @lastname = lastname

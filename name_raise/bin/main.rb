@@ -6,8 +6,10 @@ begin
   print 'Enter Last name: '
   lastname = gets.chomp.strip
   Name.new(firstname, lastname)
-rescue BlankArgument
+rescue BlankArgument => e
+  puts e
   retry
-rescue FirstnameError
+rescue FirstnameError => e
+  puts e
   retry
 end
