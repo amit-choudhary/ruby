@@ -7,9 +7,7 @@ begin
   lastname = gets.chomp.strip
   Name.new(firstname, lastname)
 rescue BlankArgument
-  puts 'Blank Argument. Please Enter again'
   retry
 rescue FirstnameError
-  puts 'First alphabet of first name is not capital. Please Enter again'
   retry
 end
