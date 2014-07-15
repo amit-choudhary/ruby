@@ -1,4 +1,4 @@
-require_relative '../lib/array.rb'
+require_relative '../lib/array'
 
 puts 'Enter the size of the array: '
 size = gets.chomp.to_i
@@ -11,4 +11,4 @@ end
 
 print input_array
 print "\n"
-print input_array.group_on_length
+print input_array.group_by_length
