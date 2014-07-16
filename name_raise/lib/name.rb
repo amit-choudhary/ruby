@@ -4,7 +4,7 @@ require_relative 'firstname_error'
 class Name
 
   def invalid?(name)
-    name.nil? || name.length == 0
+    name.nil? || name.length.zero?
   end
 
   def initialize(firstname, lastname)
