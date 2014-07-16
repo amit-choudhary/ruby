@@ -7,7 +7,7 @@ class Interest
   end
   
   def simple_amount
-    principal + principal * time * @rate / 100
+    principal + principal * time * rate / 100
   end
 
   def compound_amount
