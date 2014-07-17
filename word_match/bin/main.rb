@@ -1,16 +1,6 @@
-require_relative '../lib/array'
+require_relative '../lib/dictionary'
 
-puts 'Enter the size of the array: '
-size = gets.chomp.to_i
-puts 'Enter the array elements: '
-input_array = Array.new
-
-size.times do |index|
-  input_array.push(gets.chomp)
-end
-
+dictionary = Dictionary.new('Testingg123', 'testing23542', 'asdtest', 'sazwqa')
 print 'Enter the word to be matched: '
 word = gets.chomp.strip
-print input_array
-print "\n"
-print input_array.match(word)
+print dictionary.match(word)
