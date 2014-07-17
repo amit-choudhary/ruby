@@ -1,0 +1,2 @@
+class InvalidTimeError < StandardError
+end
