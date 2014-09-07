@@ -1,13 +1,16 @@
 class Dictionary
-  @@dictionary = []
+  @dictionary = []
+  class << self
+    attr_accessor :dictionary
+  end
 
   def initialize(*str)
-    @@dictionary << str
+    self.class.dictionary << str
   end
 
   def match(word)
     regex = /#{ word }/i
-    result = @@dictionary.flatten.select { |str| str=~ regex }
+    result = self.class.dictionary.flatten.select { |str| str=~ regex }
   end
 
 end
